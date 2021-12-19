@@ -27,22 +27,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common Octavi stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common Ancient stuff.
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
-# Bootanimation Resolution
+
+
+# Ancient Official
+ANCIENT_OFFICIAL ?= true
+ANCIENT_GAPPS ?= true
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Custom stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
-
-# Build Status
-OCTAVI_BUILD_TYPE := Official
+TARGET_USES_BLUR := true
+PIXEL_STUFF := true
+ANCIENT_WEEABO := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := octavi_vince
+PRODUCT_NAME := ancient_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
