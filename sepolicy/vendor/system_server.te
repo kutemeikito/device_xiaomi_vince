@@ -17,6 +17,9 @@ allow system_server camera_prop:file { open read getattr };
 allow system_server exported_camera_prop:file { read };
 allow system_server mm-qcamerad:binder { call };
 
+# FP
+allow system_server default_android_hwservice:hwservice_manager  { find };
+
 # Smart Charging
 allow system_server sysfs_battery_supply:file rw_file_perms;
 
