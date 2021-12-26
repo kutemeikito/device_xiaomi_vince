@@ -126,7 +126,8 @@ ro.sys.fw.dex2oat_thread_count=8
 ro.vendor.perf.scroll_opt=true
 
 # Radio
-persist.radio.multisim.config=dsds
+persist.radio.multisim.config=none
+persist.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.add_power_save=1
 persist.vendor.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.apm_sim_not_pwdn=1
