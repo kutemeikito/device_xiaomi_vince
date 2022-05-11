@@ -151,6 +151,10 @@ persist.vendor.cne.feature=1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.systemuicompilerfilter=speed
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.composition.type=c2d \
